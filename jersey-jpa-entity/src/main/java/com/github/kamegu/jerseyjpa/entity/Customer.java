@@ -14,4 +14,14 @@ public class Customer {
 
   @Column
   private String kname2;
+
+  public Customer() {
+    
+  }
+
+  public Customer(int id) {
+    this.id = id;
+    this.kname1 = "test";
+    this.kname2 = "test" + id;
+  }
 }
